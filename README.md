@@ -8,16 +8,14 @@
   <a href="#-projeto">Projeto</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#-como-rodar-o-projeto">Como rodar o projeto</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#-tecnologias">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#-layout">Layout</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-layout">Layout</a>&nbsp;&nbsp;&nbsp;
 </p>
 
 ## 💻 Projeto
 
 O **Ignite Teams** é um aplicativo projetado para ajudar a gerenciar turmas e times. Com o **Ignite Teams**, é fácil criar novas turmas e adicionar ou remover pessoas. O aplicativo é perfeito para profissionais que trabalham com equipes.
 
-## 🧭 Como rodar o projeto
-
-### 🚨 Requisitos
+## 🚨 Como rodar o projeto?
 
 **Instalação aplicativo do Expo no smartphone**
 
