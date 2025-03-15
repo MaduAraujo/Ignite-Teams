@@ -1,14 +1,14 @@
-import { Button } from "@components/Button";
-import { GroupCard } from "@components/GroupCard";
-import { Header } from "@components/Header";
-import { Highlight } from "@components/Highlight";
-import { ListEmpty } from "@components/ListEmpty";
-import { Loading } from "@components/Loading";
-import { useFocusEffect, useNavigation } from "@react-navigation/native";
-import { groupsGetAll } from "@storage/group/groupsGetAll";
-import { useCallback, useState } from "react";
-import { FlatList } from "react-native";
-import { Container } from "./style";
+import { Button } from '@components/Button';
+import { GroupCard } from '@components/GroupCard';
+import { Header } from '@components/Header';
+import { Highlight } from '@components/Highlight';
+import { ListEmpty } from '@components/ListEmpty';
+import { Loading } from '@components/Loading';
+import { useFocusEffect, useNavigation } from '@react-navigation/native';
+import { groupsGetAll } from '@components/storage/group/groupsGetAll';
+import { useCallback, useState } from 'react';
+import { FlatList } from 'react-native';
+import { Container } from './style';
 
 export function Groups() {
   const [isLoading, setIsLoading] = useState(true);
@@ -28,17 +28,17 @@ export function Groups() {
   };
 
   const handleNewGroup = () => {
-    navigation.navigate("new");
+    navigation.navigate('new');
   };
 
   const handleOpenGroup = (group: string) => {
-    navigation.navigate("players", { group });
+    navigation.navigate('players', { group });
   };
 
   useFocusEffect(
     useCallback(() => {
       fetchGroups();
-    }, [])
+    }, []),
   );
 
   return (
@@ -56,7 +56,7 @@ export function Groups() {
           )}
           contentContainerStyle={groups.length === 0 ? { flex: 1 } : {}}
           ListEmptyComponent={() => (
-            <ListEmpty message="Que tal cadastrar a primeira turma?" />
+            <ListEmpty message="Crie uma turma para adicionar pessoas" />
           )}
         />
       )}
