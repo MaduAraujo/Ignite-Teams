@@ -1,6 +1,6 @@
-import { TextInput, TextInputProps } from "react-native";
-import { useTheme } from "styled-components/native";
-import { Container } from "./style";
+import { TextInput, TextInputProps } from 'react-native';
+import { useTheme } from 'styled-components/native';
+import { Container } from './style';
 
 type InputProps = TextInputProps & {
   inputRef?: React.RefObject<TextInput>;

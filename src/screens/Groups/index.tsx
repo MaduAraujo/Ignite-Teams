@@ -44,7 +44,7 @@ export function Groups() {
   return (
     <Container>
       <Header />
-      <Highlight title="Turmas" subtitle="Jogue com a sua turma" />
+      <Highlight title="Turmas" subtitle="jogue com a sua turma" />
       {isLoading ? (
         <Loading />
       ) : (
@@ -56,7 +56,7 @@ export function Groups() {
           )}
           contentContainerStyle={groups.length === 0 ? { flex: 1 } : {}}
           ListEmptyComponent={() => (
-            <ListEmpty message="Crie uma turma para adicionar pessoas" />
+            <ListEmpty message="Que tal cadastrar a primeira turma?" />
           )}
         />
       )}

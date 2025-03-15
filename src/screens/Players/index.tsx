@@ -18,6 +18,7 @@ import { AppError } from '@components/utils/AppError';
 import { useEffect, useRef, useState } from 'react';
 import { Alert, FlatList, TextInput } from 'react-native';
 import { Container, Form } from './style';
+import { playersGetByGroupAndTeam } from '@components/storage/player/playersGetByGroupAndTeam';
 
 type RouteParams = {
   group: string;
